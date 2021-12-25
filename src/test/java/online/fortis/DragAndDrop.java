@@ -10,7 +10,7 @@ public class DragAndDrop {
 
     @Test
 
-    void swapКectangles(){
+    void swapRectangles(){
         // Откройте https://the-internet.herokuapp.com/drag_and_drop
         open("https://the-internet.herokuapp.com/drag_and_drop");
 
@@ -22,17 +22,4 @@ public class DragAndDrop {
         $("#column-b").shouldHave(text("a"));
 
     }
-
-
-
-
-
-
-
-//    P.S. В Selenide есть команда $(element).dragAndDrop($(to-element)),
-//    проверьте работает ли тест, если использовать её вместо actions()
-//
-//(раньше не работала из-за ошибки в ChromeDriver, но может быть уже починили? :-)).
-//
-//    Если работает - сообщите в группе курса.
 }
