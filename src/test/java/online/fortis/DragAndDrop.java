@@ -18,7 +18,7 @@ public class DragAndDrop {
         $("#column-a").dragAndDropTo("#column-b");
 
         // Проверьте, что прямоугольники действительно поменялись
-        $("#column-a").shouldHave(text("B"));
+        $("#column-a").shouldHave(text("b"));
         $("#column-b").shouldHave(text("a"));
 
     }
